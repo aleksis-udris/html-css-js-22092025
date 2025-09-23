@@ -1,4 +1,9 @@
 <html>
+    <head>
+        <title>Review Submitted</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
+    </head>
     <body>
         <?php
             require 'review.php';
@@ -23,6 +28,7 @@
 
             echo "<p> If we will have any other questions, we will contact you through your e-mail: " . $rev->get_email() . "! </p>"
         ?>
-        <button onClick="window.location.href='index.html'">Go Back</button>
+        <button onClick="window.location.href='index.html'">Go Back To Start</button>
+        <button onClick="window.location.href='datatable.php'">Go To Reviews</button>
     </body>
 </html>

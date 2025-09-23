@@ -1,4 +1,9 @@
 <html>
+    <head>
+        <title>Reviews</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
+    </head>
     <body>
         <table>
             <thead>
@@ -27,6 +32,7 @@
                     echo '<td>' . $row["name"] . '</td>';
                     echo '<td>' . $row["email"] . '</td>';
                     echo '<td>' . $row["level"] . '</td>';
+                    echo '<td>' . $row["created_at"] . '</td>';
                     echo '<td>' . $row["review"] . '</td>';
                     echo '</tr>';
                 }
